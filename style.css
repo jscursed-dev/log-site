@@ -1,0 +1,79 @@
+body {
+  background-color: rgba(70, 76, 99, 1);
+}
+
+.form {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  box-shadow: 5px 2px 15px rgba(0,0,0,0.5);
+  position: fixed; top: 30%; left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  border-radius: 7px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.form_group {
+  margin-top: 10px;
+}
+
+.form_input{
+  border: 1px solid rgba(77, 77, 77, 1);;
+  height: 30px;
+  width: 210px;
+  border-radius: 5px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+input:focus{
+  border: 1px solid rgba(101, 152, 194, 1);
+  box-shadow: 1px 2px 10px rgba(101, 152, 194, 1);
+}
+
+.form_button{
+  position: relative;
+  width: 160px;
+  top: 17px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 15px;
+  outline: none;
+  border: none;
+  background-color: rgba(91, 179, 100, 1);
+  color: white;
+  border-radius: 10px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.form_button:active {
+    background-color: rgba(79, 138, 214, 1);
+}
+
+.notification{
+  position: fixed;
+
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+
+  left: 80%;
+  top: 80%;
+
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+
+  box-shadow: 0px 0px 20px rgba(194, 54, 54, 1);
+
+  padding-left: 20px;
+  padding-top: 10px;
+}
