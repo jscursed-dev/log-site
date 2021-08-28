@@ -10,7 +10,6 @@ function checkPass(){
   for(let i=0; i<inputs.length; i++){
     for(let j=0; j<banned.length; j++){
       checker = inputs[i].value.indexOf(banned[j]);
-      console.log(inputs[i].value);
       if(checker!=-1){
         notify();
         break;
@@ -35,6 +34,8 @@ function checkPass(){
     let opacity = 0.10;
 
     let intervalId = setInterval(move, 1000/60);
+
+    setTimeout(function(){elem.remove();}, 10000);
 
     function move(){
       if(pos<75){

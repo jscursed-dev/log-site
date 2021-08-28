@@ -1,6 +1,67 @@
 body {
   background-color: rgba(70, 76, 99, 1);
+  margin: 0;
 }
+
+.header {
+  position: fixed;
+
+  width: 100%;
+  height: 7%;
+
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.navigation {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+}
+
+.menu-img {
+  position: absolute;
+  top: 12%;
+  left: 1.2%;
+}
+
+a {
+  margin-left: 30px;
+  cursor: pointer;
+  line-height: 1;
+  display: inline-block;
+  text-decoration:none;
+}
+
+a:hover{
+  color: rgba(61, 136, 235, 1);
+  transition: .3s ease-in-out;
+
+}
+
+a:after {
+
+    background-color: rgba(61, 136, 235, 1);
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+a:hover:after,
+a:focus:after {
+    width: 100%;
+}
+
 
 .form {
   background-color: white;
