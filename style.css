@@ -30,6 +30,7 @@ body {
   position: absolute;
   top: 12%;
   left: 1.2%;
+  cursor: pointer;
 }
 
 a {
